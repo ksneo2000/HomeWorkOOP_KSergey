@@ -3,8 +3,10 @@
 
 namespace HomeWorkOOP_KSergey
 {
-    class Patient
+    public class Patient: Person
     {
+        
+        public int DianosID { get; set; }
 
     }
 }
