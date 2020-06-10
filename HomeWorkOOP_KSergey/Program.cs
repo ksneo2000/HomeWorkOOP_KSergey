@@ -8,8 +8,28 @@ namespace HomeWorkOOP_KSergey
 {
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
+            PrintHello("Дно", 36);
+
+            var person1 = new Person();
+            person1.ReadCreateDirectoryF();
+            
+
+           
+
+            Console.ReadKey();
         }
+
+        public static void PrintHello(string name, int age)
+        {
+            
+            //Console.WriteLine($"Привет, {name}. Вам {age} лет");
+            //Console.ReadLine();
+
+        }
+        
+
+        
     }
 }
