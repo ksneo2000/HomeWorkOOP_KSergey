@@ -10,25 +10,21 @@ namespace HomeWorkOOP_KSergey
     {
         static void Main(string[] args)
         {
-            PrintHello("Дно", 36);
+            Console.WriteLine("Веедите директорию для записи: ");
+            var fm = new FileManager(Console.ReadLine());
+            
+            
+
+
 
             var person1 = new Person();
-            person1.ReadCreateDirectoryF();
+          
             
 
            
 
             Console.ReadKey();
         }
-
-        public static void PrintHello(string name, int age)
-        {
-            
-            //Console.WriteLine($"Привет, {name}. Вам {age} лет");
-            //Console.ReadLine();
-
-        }
-        
 
         
     }
