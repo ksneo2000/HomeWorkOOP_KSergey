@@ -10,7 +10,13 @@ namespace HomeWorkOOP_KSergey
         public FileManager(string path)
         {
             
-            if (!path.Contains(":"))
+            
+            if(string.IsNullOrWhiteSpace(path))
+            {
+                throw new ArgumentNullException(nameof(path));
+            }
+
+            if (Path.IsPathRooted(path))
             {
                 throw new ArgumentException("Директория не содержит имя диска");
                 
